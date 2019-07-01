@@ -1,0 +1,202 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d71a15bf225f2e8044d2a90b888cfa30/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d8020c738e06af17a2ce99d9f594c843/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f740aca9936fe34b05329222f3686000/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e3e5b122d27736f9753cfec6cf82d0e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f4455ef5d99e2cbba4b60bc056bb4241/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/858e1825f9c596858c90766c8fbfd05b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a35669726f739324c18a46dab0284b07/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/9d9715597b02864bbc3241c548b6d004/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/bf97533c4487dbdbccf25792f983a09e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f7baac16a5d98ce60341379b7802a7d0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b53ceb78b659de5bd78736b87b24fae2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/8cf5ef4340b5d16283b90c00c8a857f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/11c8d7c1cbbf180f7f8dac9e7071e382/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2580e766c09a83238ff2a62fca0b08af/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/c86e598be261f13fcebd331bcbe2df75/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/64ea389a59494f1b4d0cd2c1b14def59/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/558c6fc33f5840267a40ff016e1c001a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ba20598e98d13d2700d42f5618cadeaa/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/262e8ad4bcef26fda4f10afd37df68ce/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b33a44fee9b246e4b1b20644a8f276b5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a67c47d29705609129dfddfcf7de1e11/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e1793231a223225b574d007eb10b3076/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e554ca10dc60933beea6258a7659318a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/1924f516111a838cfa8b151ed17a1b55/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/3c5d6f6d2922aa5608d83b40022ef7a1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2ffbb13d473ff7402dcc2f50a0311bc8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/94e4d4b05af504c7e0bbe38fd4d81d05/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/55f9404327cfef656602442053607ef5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/336b5d8dbc4ca3ef96bca08c02332965/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2dce40b16aeef50213792e60b6aefc00/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:1-39:12
+	package
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:8:22-78
+application
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:10:5-37:19
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ba20598e98d13d2700d42f5618cadeaa/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ba20598e98d13d2700d42f5618cadeaa/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:13:9-45
+	android:allowBackup
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.codepath.apps.restclienttemplate.LoginActivity
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:17:9-36:20
+	android:label
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:20:13-45
+	android:theme
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:19:13-44
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:18:13-78
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:24:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/intent_host+data:scheme:@string/intent_scheme
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:26:13-35:29
+action#android.intent.action.VIEW
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:29:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:30:17-78
+	android:name
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:30:27-75
+data
+ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:32:17-34:62
+	android:host
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:33:21-55
+	android:scheme
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml:34:21-59
+uses-sdk
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d71a15bf225f2e8044d2a90b888cfa30/AndroidManifest.xml:7:5-9:41
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d71a15bf225f2e8044d2a90b888cfa30/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d8020c738e06af17a2ce99d9f594c843/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d8020c738e06af17a2ce99d9f594c843/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f740aca9936fe34b05329222f3686000/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f740aca9936fe34b05329222f3686000/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e3e5b122d27736f9753cfec6cf82d0e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e3e5b122d27736f9753cfec6cf82d0e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f4455ef5d99e2cbba4b60bc056bb4241/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f4455ef5d99e2cbba4b60bc056bb4241/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/858e1825f9c596858c90766c8fbfd05b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/858e1825f9c596858c90766c8fbfd05b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a35669726f739324c18a46dab0284b07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a35669726f739324c18a46dab0284b07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/9d9715597b02864bbc3241c548b6d004/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/9d9715597b02864bbc3241c548b6d004/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/bf97533c4487dbdbccf25792f983a09e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/bf97533c4487dbdbccf25792f983a09e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f7baac16a5d98ce60341379b7802a7d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f7baac16a5d98ce60341379b7802a7d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b53ceb78b659de5bd78736b87b24fae2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b53ceb78b659de5bd78736b87b24fae2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/8cf5ef4340b5d16283b90c00c8a857f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/8cf5ef4340b5d16283b90c00c8a857f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/11c8d7c1cbbf180f7f8dac9e7071e382/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/11c8d7c1cbbf180f7f8dac9e7071e382/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2580e766c09a83238ff2a62fca0b08af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2580e766c09a83238ff2a62fca0b08af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/c86e598be261f13fcebd331bcbe2df75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/c86e598be261f13fcebd331bcbe2df75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/64ea389a59494f1b4d0cd2c1b14def59/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/64ea389a59494f1b4d0cd2c1b14def59/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/558c6fc33f5840267a40ff016e1c001a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/558c6fc33f5840267a40ff016e1c001a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ba20598e98d13d2700d42f5618cadeaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ba20598e98d13d2700d42f5618cadeaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/262e8ad4bcef26fda4f10afd37df68ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/262e8ad4bcef26fda4f10afd37df68ce/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b33a44fee9b246e4b1b20644a8f276b5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b33a44fee9b246e4b1b20644a8f276b5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a67c47d29705609129dfddfcf7de1e11/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a67c47d29705609129dfddfcf7de1e11/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e1793231a223225b574d007eb10b3076/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e1793231a223225b574d007eb10b3076/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e554ca10dc60933beea6258a7659318a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e554ca10dc60933beea6258a7659318a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/1924f516111a838cfa8b151ed17a1b55/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/1924f516111a838cfa8b151ed17a1b55/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/3c5d6f6d2922aa5608d83b40022ef7a1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/3c5d6f6d2922aa5608d83b40022ef7a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2ffbb13d473ff7402dcc2f50a0311bc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2ffbb13d473ff7402dcc2f50a0311bc8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/94e4d4b05af504c7e0bbe38fd4d81d05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/94e4d4b05af504c7e0bbe38fd4d81d05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/55f9404327cfef656602442053607ef5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/55f9404327cfef656602442053607ef5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/336b5d8dbc4ca3ef96bca08c02332965/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/336b5d8dbc4ca3ef96bca08c02332965/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2dce40b16aeef50213792e60b6aefc00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/2dce40b16aeef50213792e60b6aefc00/AndroidManifest.xml:20:5-44
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mtrejo/Documents/TwitterMirror/app/src/main/AndroidManifest.xml
