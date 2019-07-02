@@ -699,7 +699,7 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button
+id btnSend
 id buttonPanel
 id cancel_action
 id center
@@ -724,6 +724,7 @@ id disableHome
 id edit_query
 id end
 id end_padder
+id etTweet
 id expand_activities_button
 id expanded_menu
 id fill
@@ -811,7 +812,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id time
 id title
 id titleDividerNoCustom

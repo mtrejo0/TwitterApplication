@@ -1,12 +1,13 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
-import android.widget.Button;
+import android.view.MenuItem;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -14,6 +15,7 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
@@ -32,7 +34,39 @@ public class TimelineActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.timeline_menu, menu);
+
+
+
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId() == R.id.miCompose)
+        {
+            Intent i = new Intent(this,ComposeActivity.class);
+//            this.startActivity(i);
+            startActivityForResult(i,100);
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        // check request code and result code first
+
+        // Use data parameter
+        if(requestCode == 100 && resultCode == RESULT_OK)
+        {
+            Tweet tweet = Parcels.unwrap(data.getParcelableExtra(Tweet.class.getSimpleName()));
+            tweets.add(0, tweet);
+            tweetAdapter.notifyItemInserted(0);
+            rvTweets.scrollToPosition(0);
+        }
     }
 
     @Override
@@ -61,7 +95,7 @@ public class TimelineActivity extends AppCompatActivity {
         populateTimeline();
 
 
-        Button  button = findViewById(R.id.miCompose);
+
 
 
 
@@ -128,13 +162,5 @@ public class TimelineActivity extends AppCompatActivity {
 
     }
 
-//    public void compose(View v)
-//    {
-//        Intent intent = new Intent(v.getContext(),ComposeActivity.class);
-//
-//
-//        v.getContext().startActivity(intent);
-//
-//
-//    }
+
 }

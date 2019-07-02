@@ -49,6 +49,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<RestClient> {
 		Toast.makeText(this,"Success Loggin In",Toast.LENGTH_LONG).show();
 		 Intent i = new Intent(this, TimelineActivity.class);
 		 startActivity(i);
+		 finish();
 	}
 
 	// OAuth authentication flow failed, handle the error
