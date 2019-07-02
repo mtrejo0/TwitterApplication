@@ -1,12 +1,16 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -26,7 +30,39 @@ public class ComposeActivity extends AppCompatActivity {
 
 
         final Button button = findViewById(R.id.btnSend);
-        final EditText text = findViewById(R.id.etTweet);
+        final EditText etTweet = findViewById(R.id.etTweet);
+        final TextView tvChars = findViewById(R.id.tvChars);
+
+
+        etTweet.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                int charCount = etTweet.getText().toString().length();
+                int charsLeft = 280 - charCount;
+
+                if (charsLeft < 0 )
+                {
+                    tvChars.setTextColor(Color.RED);
+                }
+                else
+                {
+                    tvChars.setTextColor(Color.GRAY);
+                }
+
+                tvChars.setText(charsLeft + " Characters Left");
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
 
 
@@ -35,7 +71,7 @@ public class ComposeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String tweet = text.getText().toString();
+                String tweet = etTweet.getText().toString();
 
                 RestClient client  = RestApplication.getRestClient(v.getContext());
                 client.sendTweet(tweet, new JsonHttpResponseHandler(){

@@ -819,6 +819,7 @@ id title_template
 id top
 id topPanel
 id tvBody
+id tvChars
 id tvUserName
 id uniform
 id up
