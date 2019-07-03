@@ -27,7 +27,7 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
-public class TimelineActivity extends AppCompatActivity {
+public class TimelineActivity extends AppCompatActivity implements TwitterAdapter.OnTweetClickListener {
 
 
     private RestClient client;
@@ -148,7 +148,7 @@ public class TimelineActivity extends AppCompatActivity {
         // init the arraylist
         tweets = new ArrayList<>();
         // construct the adapter form the data source
-        tweetAdapter = new TwitterAdapter(tweets);
+        tweetAdapter = new TwitterAdapter(tweets,this);
 
         // recycler view setup
         rvTweets.setLayoutManager(new LinearLayoutManager(this));
@@ -310,4 +310,14 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onTweetClicked(Tweet tweet) {
+        // start new intent with and @ sign in front
+
+        Intent i = new Intent(this,ComposeActivity.class);
+
+        i.putExtra("@","@"+tweet.user.screenName+" ");
+
+        startActivityForResult(i,100);
+    }
 }

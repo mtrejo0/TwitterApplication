@@ -23,11 +23,13 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
 
     private List<Tweet> mTweets;
     Context context;
+    private OnTweetClickListener clickListener;
 
     // pass in the twets to constructor
-    public  TwitterAdapter(List<Tweet> tweets)
+    public  TwitterAdapter(List<Tweet> tweets, OnTweetClickListener clickListener)
     {
         mTweets = tweets;
+        this.clickListener = clickListener;
     }
 
     // for each row inflate the layout
@@ -95,15 +97,10 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
                 int pos = viewHolder.getAdapterPosition();
 
                 Tweet tweet = mTweets.get(pos);
+                clickListener.onTweetClicked(tweet);
 
-                String user = tweet.user.screenName;
 
-                // populate what the beginning text should be and create new intent
 
-                i.putExtra("@", "@"+user+" ");
-                v.getContext().startActivity(i);
-
-//                TimelineActivity.startComposeActivity(user);
 
 
 
@@ -111,6 +108,11 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
         });
 
 
+
+    }
+
+    public static interface OnTweetClickListener{
+        void onTweetClicked(Tweet tweet);
 
     }
 
