@@ -178,7 +178,7 @@ public class TimelineActivity extends AppCompatActivity {
 
                     try {
                         Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));
-                        Log.d("TWEET",tweet.user.name);
+
 
                         tweets.add(tweet);
                         tweetAdapter.notifyItemInserted(tweets.size()-1);

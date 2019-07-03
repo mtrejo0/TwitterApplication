@@ -79,6 +79,9 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
         // set text to how long ago the tweet was made
         viewHolder.tvTime.setText(tweet.timeAgo);
 
+        // set the handle
+        viewHolder.tvHandle.setText("@"+tweet.user.screenName);
+
         // on click listener for if the retweet button was clicked
         viewHolder.btnRetweet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +93,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
 
                 Tweet tweet = mTweets.get(pos);
 
-                String user = tweet.user.name;
+                String user = tweet.user.screenName;
 
                 // populate what the beginning text should be and create new intent
 
@@ -122,6 +125,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
         public TextView tvBody;
         public ImageButton btnRetweet;
         public TextView tvTime;
+        public TextView tvHandle;
 
 
         public ViewHolder(View itemView)
@@ -132,6 +136,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
             tvBody = itemView.findViewById(R.id.tvBody);
             btnRetweet = itemView.findViewById(R.id.btnRetweet);
             tvTime = itemView.findViewById(R.id.tvTime);
+            tvHandle = itemView.findViewById(R.id.tvHandle);
 
         }
 

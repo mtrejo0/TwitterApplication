@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jul 02 17:22:41 PDT 2019
+#Tue Jul 02 17:46:39 PDT 2019
 0.baseType=DIRECTORY
 0.base=/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/dex/debug/mergeDexDebug/out
 0.path=classes.dex

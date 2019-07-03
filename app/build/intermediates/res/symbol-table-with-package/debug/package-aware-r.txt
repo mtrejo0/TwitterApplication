@@ -828,6 +828,7 @@ id top
 id topPanel
 id tvBody
 id tvChars
+id tvHandle
 id tvTime
 id tvUserName
 id uniform

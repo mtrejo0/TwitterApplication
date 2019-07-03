@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher" />
@@ -19,10 +19,11 @@
     <TextView
         android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
-        android:layout_height="38dp"
+        android:layout_height="23dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +40,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUserName"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <ImageButton
         android:id="@+id/btnRetweet"
@@ -77,11 +78,20 @@
         android:id="@+id/tvTime"
         android:layout_width="112dp"
         android:layout_height="26dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:text="7h"
-        app:layout_constraintBottom_toTopOf="@+id/tvBody"
-        app:layout_constraintStart_toEndOf="@+id/tvUserName" />
+        app:layout_constraintStart_toEndOf="@+id/tvUserName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="handle"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
 
 
 </android.support.constraint.ConstraintLayout>
