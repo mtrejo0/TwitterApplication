@@ -670,6 +670,7 @@ drawable ic_compose
 drawable ic_launcher
 drawable ic_like
 drawable ic_like_twitter
+drawable ic_loc
 drawable ic_profile
 drawable ic_retweet
 drawable ic_share
@@ -795,6 +796,7 @@ id parent
 id parentPanel
 id pbProgressAction
 id percent
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio

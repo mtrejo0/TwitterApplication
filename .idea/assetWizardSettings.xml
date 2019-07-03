@@ -56,8 +56,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/twitter-redesign-icons 2/pngs/ic_vector_heart_stroke.png" />
-                                      <entry key="outputName" value="ic_like_twitter" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/twitter-redesign-icons 2/pngs/ic_vector_location_stroke.png" />
+                                      <entry key="outputName" value="ic_loc" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>

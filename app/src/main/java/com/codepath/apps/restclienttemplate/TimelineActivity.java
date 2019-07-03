@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +12,8 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ProgressBar;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -32,6 +35,8 @@ public class TimelineActivity extends AppCompatActivity {
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
     SwipeRefreshLayout swipeContainer;
+    ProgressBar progressBar;
+    MenuItem miActionProgressItem;
 
 
 
@@ -56,6 +61,28 @@ public class TimelineActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // Store instance of the menu item containing progress
+        miActionProgressItem = menu.findItem(R.id.miActionProgress);
+        // Extract the action-view from the menu item
+        ProgressBar v =  (ProgressBar) MenuItemCompat.getActionView(miActionProgressItem);
+
+        // Return to finish
+        return super.onPrepareOptionsMenu(menu);
+    }
+    public void showProgressBar() {
+        // Show progress item
+        miActionProgressItem.setVisible(true);
+
+    }
+
+    public void hideProgressBar() {
+        // Hide progress item
+        miActionProgressItem.setVisible(false);
+    }
 
     public void startComposeActivity()
     {
@@ -96,6 +123,8 @@ public class TimelineActivity extends AppCompatActivity {
         }
     }
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +135,9 @@ public class TimelineActivity extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#35CDE5")));
 
 
+
+        progressBar = findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.GONE);
 
 
         client = RestApplication.getRestClient(this);
@@ -166,6 +198,7 @@ public class TimelineActivity extends AppCompatActivity {
         // getHomeTimeline is an example endpoint.
 
 
+        showProgressBar();
 
         client.getHomeTimeline(new JsonHttpResponseHandler(){
 
@@ -193,6 +226,8 @@ public class TimelineActivity extends AppCompatActivity {
                 // end refresh icon
                 swipeContainer.setRefreshing(false);
 
+                hideProgressBar();
+
 
 
             }
@@ -212,6 +247,9 @@ public class TimelineActivity extends AppCompatActivity {
 
 
     private void populateTimeline() {
+
+        // TODO figure out how to have progress initially
+//        showProgressBar();
         client.getHomeTimeline(new JsonHttpResponseHandler(){
 
             @Override
@@ -237,6 +275,8 @@ public class TimelineActivity extends AppCompatActivity {
                     }
 
                 }
+                // TODO figure out how to have progress initially
+//                hideProgressBar();
 
 
             }
