@@ -106,6 +106,8 @@ public class TimelineActivity extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#35CDE5")));
 
 
+
+
         client = RestApplication.getRestClient(this);
 
         // find the recycler view
@@ -178,15 +180,16 @@ public class TimelineActivity extends AppCompatActivity {
 
                     try {
                         Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));
-
-
                         tweets.add(tweet);
                         tweetAdapter.notifyItemInserted(tweets.size()-1);
+
+
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-
                 }
+
                 // end refresh icon
                 swipeContainer.setRefreshing(false);
 

@@ -9,6 +9,7 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mtrejo/.gradle/cach
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/d8020c738e06af17a2ce99d9f594c843/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/6d8c15a31318ea4976716f7d175479e5/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:2:1-13:12
+MERGED from [android.arch.paging:runtime:1.0.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/4af7f03fe95d680edba353d9f1709783/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b1e262bb3ba75d9e0aa1efe284e1a035/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f740aca9936fe34b05329222f3686000/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/e3e5b122d27736f9753cfec6cf82d0e7/AndroidManifest.xml:17:1-22:12
@@ -148,6 +149,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mtre
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/6d8c15a31318ea4976716f7d175479e5/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/991a53807b3729cb3cfe5e430f7551e3/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.paging:runtime:1.0.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/4af7f03fe95d680edba353d9f1709783/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.paging:runtime:1.0.1] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/4af7f03fe95d680edba353d9f1709783/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b1e262bb3ba75d9e0aa1efe284e1a035/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/b1e262bb3ba75d9e0aa1efe284e1a035/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/mtrejo/.gradle/caches/transforms-2/files-2.1/f740aca9936fe34b05329222f3686000/AndroidManifest.xml:20:5-44

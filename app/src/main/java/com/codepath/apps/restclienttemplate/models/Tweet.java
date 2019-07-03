@@ -47,6 +47,7 @@ public class Tweet {
     public static String getRelativeTimeAgo(String rawJsonDate) {
         String twitterFormat = "EEE MMM dd HH:mm:ss ZZZZZ yyyy";
         SimpleDateFormat sf = new SimpleDateFormat(twitterFormat, Locale.ENGLISH);
+
         sf.setLenient(true);
 
         String relativeDate = "";

@@ -19,6 +19,8 @@ import java.util.List;
 public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHolder>{
 
 
+
+
     private List<Tweet> mTweets;
     Context context;
 
@@ -74,6 +76,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
         // load image
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
+
                 .into(viewHolder.ivProfileImage);
 
         // set text to how long ago the tweet was made

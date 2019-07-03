@@ -400,6 +400,14 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color inline_action
+color inline_action_disabled
+color inline_action_like
+color inline_action_like_pressed
+color inline_action_pressed
+color inline_action_retweet
+color inline_action_retweet_pressed
+color light_gray
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -412,6 +420,13 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
+color medium_gray
+color medium_gray_30
+color medium_gray_50
+color medium_green
+color medium_red
+color medium_red_30
+color medium_red_50
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
@@ -437,6 +452,10 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color twitter_blue
+color twitter_blue_30
+color twitter_blue_50
+color twitter_blue_fill_pressed
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -747,6 +766,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -759,6 +779,7 @@ id listMode
 id list_item
 id media_actions
 id message
+id miActionProgress
 id miCompose
 id miProfile
 id middle
@@ -772,6 +793,7 @@ id notification_main_column_container
 id packed
 id parent
 id parentPanel
+id pbProgressAction
 id percent
 id progress_circular
 id progress_horizontal
@@ -870,6 +892,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout action_view_progress
 layout activity_compose
 layout activity_login
 layout activity_timeline
