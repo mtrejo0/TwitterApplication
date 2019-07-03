@@ -767,7 +767,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
 id info
 id invisible
 id italic
@@ -855,6 +854,7 @@ id tvChars
 id tvHandle
 id tvTime
 id tvUserName
+id tweetPicture
 id uniform
 id up
 id useLogo
@@ -896,8 +896,10 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout action_view_progress
 layout activity_compose
+layout activity_detail
 layout activity_login
 layout activity_timeline
+layout fragment_compose
 layout item_tweet
 layout notification_action
 layout notification_action_tombstone
@@ -960,6 +962,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string hello_blank_fragment
 string intent_host
 string intent_scheme
 string login_label

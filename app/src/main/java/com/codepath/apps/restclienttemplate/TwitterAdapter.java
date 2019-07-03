@@ -81,6 +81,27 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
 
                 .into(viewHolder.ivProfileImage);
 
+
+        if(tweet.imageUrl != null)
+        {
+
+            // load image
+            Glide.with(context)
+                    .load(tweet.imageUrl)
+
+                    .into(viewHolder.ivTweetPic);
+
+        }
+        else
+        {
+            // load image
+            Glide.with(context)
+                    .load(R.drawable.ic_like)
+
+                    .into(viewHolder.ivTweetPic);
+        }
+
+
         // set text to how long ago the tweet was made
         viewHolder.tvTime.setText(tweet.timeAgo);
 
@@ -131,6 +152,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
         public ImageButton btnRetweet;
         public TextView tvTime;
         public TextView tvHandle;
+        public ImageView ivTweetPic;
 
 
         public ViewHolder(View itemView)
@@ -142,6 +164,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
             btnRetweet = itemView.findViewById(R.id.btnRetweet);
             tvTime = itemView.findViewById(R.id.tvTime);
             tvHandle = itemView.findViewById(R.id.tvHandle);
+            ivTweetPic = itemView.findViewById(R.id.tweetPicture);
 
         }
 

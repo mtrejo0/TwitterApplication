@@ -33,25 +33,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="Tweet"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
-        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
-        app:layout_constraintVertical_bias="0.376" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
 
     <ImageButton
         android:id="@+id/btnRetweet"
         android:layout_width="20dp"
-        android:background="#FFFFFF"
         android:layout_height="20dp"
         android:layout_marginStart="112dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnLike"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
         android:src="@drawable/ic_retweet"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnLike" />
 
     <ImageButton
         android:id="@+id/btnLike"
@@ -67,12 +65,12 @@
         android:id="@+id/btnShare"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
         android:background="#FFFFFF"
         android:src="@drawable/ic_share"
         app:layout_constraintStart_toEndOf="@+id/btnLike"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/tweetPicture" />
 
     <TextView
         android:id="@+id/tvTime"
@@ -94,14 +92,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:id="@+id/tweetPicture"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
-        app:srcCompat="@color/inline_action_like" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBody" />
 
 
 </android.support.constraint.ConstraintLayout>
