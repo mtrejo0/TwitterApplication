@@ -1,6 +1,8 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -48,13 +50,30 @@ public class TimelineActivity extends AppCompatActivity {
 
         if(item.getItemId() == R.id.miCompose)
         {
-            Intent i = new Intent(this,ComposeActivity.class);
-//            this.startActivity(i);
-            startActivityForResult(i,100);
+            startComposeActivity();
         }
 
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void startComposeActivity()
+    {
+        Intent i = new Intent(this,ComposeActivity.class);
+
+        startActivityForResult(i,100);
+
+    }
+
+    public void startComposeActivity(String at)
+    {
+        Intent i = new Intent(this,ComposeActivity.class);
+
+        i.putExtra("@","@"+at+" ");
+
+        startActivityForResult(i,100);
+
     }
 
     @Override
@@ -76,6 +95,10 @@ public class TimelineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
+
+        // styling
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#35CDE5")));
 
 
         client = RestApplication.getRestClient(this);
@@ -180,7 +203,7 @@ public class TimelineActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                Log.d("TwitterClient",response.toString());
+
 
                 // iterate through json array
 
@@ -193,7 +216,7 @@ public class TimelineActivity extends AppCompatActivity {
                     // notify the adapter weve added an item
                     try {
                         Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));
-                        Log.d("TWEET",tweet.user.name);
+
 
                         tweets.add(tweet);
                         tweetAdapter.notifyItemInserted(tweets.size()-1);

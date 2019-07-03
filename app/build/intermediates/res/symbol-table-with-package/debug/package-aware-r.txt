@@ -649,7 +649,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable ic_compose
 drawable ic_launcher
+drawable ic_like
+drawable ic_like_twitter
 drawable ic_profile
+drawable ic_retweet
+drawable ic_share
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -699,7 +703,10 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnLike
+id btnRetweet
 id btnSend
+id btnShare
 id buttonPanel
 id cancel_action
 id center
@@ -821,6 +828,7 @@ id top
 id topPanel
 id tvBody
 id tvChars
+id tvTime
 id tvUserName
 id uniform
 id up

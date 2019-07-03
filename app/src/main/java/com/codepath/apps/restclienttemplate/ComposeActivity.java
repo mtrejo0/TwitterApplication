@@ -2,6 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -32,6 +33,24 @@ public class ComposeActivity extends AppCompatActivity {
         final Button button = findViewById(R.id.btnSend);
         final EditText etTweet = findViewById(R.id.etTweet);
         final TextView tvChars = findViewById(R.id.tvChars);
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#35CDE5")));
+
+
+
+
+        // check if there is an @
+        String retweet = getIntent().getStringExtra("@");
+
+        if(retweet != null)
+        {
+            etTweet.setText(retweet);
+        }
+
+        int charCount = etTweet.getText().toString().length();
+        int charsLeft = 280 - charCount;
+
+        tvChars.setText(charsLeft + " Characters Left");
 
 
         etTweet.addTextChangedListener(new TextWatcher() {
