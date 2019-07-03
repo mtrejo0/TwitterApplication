@@ -34,6 +34,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         context = viewGroup.getContext();
+        // create a view holder that has ref to item_tweet
         LayoutInflater inflater = LayoutInflater.from(context);
 
         View tweetView = inflater.inflate(R.layout.item_tweet,viewGroup,false);
@@ -70,26 +71,33 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
         viewHolder.tvUserName.setText(tweet.user.name);
         viewHolder.tvBody.setText(tweet.body);
 
+        // load image
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
                 .into(viewHolder.ivProfileImage);
 
+        // set text to how long ago the tweet was made
         viewHolder.tvTime.setText(tweet.timeAgo);
 
+        // on click listener for if the retweet button was clicked
         viewHolder.btnRetweet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(v.getContext(),ComposeActivity.class);
 
+                // get tweet at that position int the adapter
                 int pos = viewHolder.getAdapterPosition();
 
                 Tweet tweet = mTweets.get(pos);
 
                 String user = tweet.user.name;
 
+                // populate what the beginning text should be and create new intent
 
                 i.putExtra("@", "@"+user+" ");
                 v.getContext().startActivity(i);
+
+//                TimelineActivity.startComposeActivity(user);
 
 
 

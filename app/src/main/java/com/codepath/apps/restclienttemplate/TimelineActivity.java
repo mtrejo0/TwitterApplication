@@ -40,14 +40,13 @@ public class TimelineActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.timeline_menu, menu);
 
-
-
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        // if the option to compose is clicked then start the comnpose activity
         if(item.getItemId() == R.id.miCompose)
         {
             startComposeActivity();
@@ -60,6 +59,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     public void startComposeActivity()
     {
+        // start new intent with that request code
         Intent i = new Intent(this,ComposeActivity.class);
 
         startActivityForResult(i,100);
@@ -68,6 +68,8 @@ public class TimelineActivity extends AppCompatActivity {
 
     public void startComposeActivity(String at)
     {
+        // start new intent with and @ sign in front
+
         Intent i = new Intent(this,ComposeActivity.class);
 
         i.putExtra("@","@"+at+" ");
@@ -84,8 +86,11 @@ public class TimelineActivity extends AppCompatActivity {
         // Use data parameter
         if(requestCode == 100 && resultCode == RESULT_OK)
         {
+            // unwrap the tweet that was posted
             Tweet tweet = Parcels.unwrap(data.getParcelableExtra(Tweet.class.getSimpleName()));
+            // add to beginning of adapter
             tweets.add(0, tweet);
+            // notify adapter and scroll up
             tweetAdapter.notifyItemInserted(0);
             rvTweets.scrollToPosition(0);
         }
@@ -117,6 +122,8 @@ public class TimelineActivity extends AppCompatActivity {
         // set adapter
 
         rvTweets.setAdapter(tweetAdapter);
+
+        // get tweets to display initially
 
         populateTimeline();
 
@@ -157,6 +164,7 @@ public class TimelineActivity extends AppCompatActivity {
         // getHomeTimeline is an example endpoint.
 
 
+
         client.getHomeTimeline(new JsonHttpResponseHandler(){
 
             @Override
@@ -190,6 +198,8 @@ public class TimelineActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
                 Log.d("TwitterRefresh",errorResponse.toString());
                 throwable.printStackTrace();
+                // end refresh icon
+                swipeContainer.setRefreshing(false);
             }
         });
 
@@ -216,8 +226,7 @@ public class TimelineActivity extends AppCompatActivity {
                     // notify the adapter weve added an item
                     try {
                         Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));
-
-
+                        // add tweet and notify adapter of change
                         tweets.add(tweet);
                         tweetAdapter.notifyItemInserted(tweets.size()-1);
                     } catch (JSONException e) {

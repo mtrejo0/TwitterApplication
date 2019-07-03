@@ -34,25 +34,27 @@ public class ComposeActivity extends AppCompatActivity {
         final EditText etTweet = findViewById(R.id.etTweet);
         final TextView tvChars = findViewById(R.id.tvChars);
 
+        // styling
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#35CDE5")));
-
-
 
 
         // check if there is an @
         String retweet = getIntent().getStringExtra("@");
 
+        // if there is a retweet action set text to what it should be
         if(retweet != null)
         {
             etTweet.setText(retweet);
+            int charCount = etTweet.getText().toString().length();
+            int charsLeft = 280 - charCount;
+
+            tvChars.setText(charsLeft + " Characters Left");
         }
 
-        int charCount = etTweet.getText().toString().length();
-        int charsLeft = 280 - charCount;
-
-        tvChars.setText(charsLeft + " Characters Left");
 
 
+
+        // text watcher to update the chars left window
         etTweet.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -62,9 +64,11 @@ public class ComposeActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
+                // get number of chars in text box
                 int charCount = etTweet.getText().toString().length();
                 int charsLeft = 280 - charCount;
 
+                // change color for appropriate text
                 if (charsLeft < 0 )
                 {
                     tvChars.setTextColor(Color.RED);
@@ -74,6 +78,7 @@ public class ComposeActivity extends AppCompatActivity {
                     tvChars.setTextColor(Color.GRAY);
                 }
 
+                // set text to how many chars are left
                 tvChars.setText(charsLeft + " Characters Left");
             }
 
@@ -90,6 +95,7 @@ public class ComposeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                // get text to tweet
                 String tweet = etTweet.getText().toString();
 
                 RestClient client  = RestApplication.getRestClient(v.getContext());
@@ -98,18 +104,18 @@ public class ComposeActivity extends AppCompatActivity {
 
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                        Log.d("ComposeTweet",response.toString());
+
 
                         try {
 
+
+                            // start new intent and send back the response
                             Tweet tweet = Tweet.fromJSON(response);
 
-                            Log.d("OK",tweet.body);
 
                             Intent data = new Intent();
 
                             data.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
-
 
                             setResult(RESULT_OK, data);
 
