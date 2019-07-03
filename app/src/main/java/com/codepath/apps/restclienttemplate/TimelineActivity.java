@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -67,8 +67,14 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     public boolean onPrepareOptionsMenu(Menu menu) {
         // Store instance of the menu item containing progress
         miActionProgressItem = menu.findItem(R.id.miActionProgress);
-        // Extract the action-view from the menu item
-        ProgressBar v =  (ProgressBar) MenuItemCompat.getActionView(miActionProgressItem);
+
+        // get tweets to display initially
+
+        populateTimeline();
+
+
+
+
 
         // Return to finish
         return super.onPrepareOptionsMenu(menu);
@@ -86,24 +92,14 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
     public void startComposeActivity()
     {
-        // start new intent with that request code
-        Intent i = new Intent(this,ComposeActivity.class);
-
-        startActivityForResult(i,100);
-
-    }
-
-    public void startComposeActivity(String at)
-    {
-        // start new intent with and @ sign in front
-
-        Intent i = new Intent(this,ComposeActivity.class);
-
-        i.putExtra("@","@"+at+" ");
-
-        startActivityForResult(i,100);
+//        // start new intent with that request code
+//        Intent i = new Intent(this,ComposeActivity.class);
+//
+//        startActivityForResult(i,100);
+        showCompose();
 
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -157,9 +153,7 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
         rvTweets.setAdapter(tweetAdapter);
 
-        // get tweets to display initially
 
-        populateTimeline();
 
 
         // Lookup the swipe container view
@@ -179,6 +173,7 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
+
 
 
 
@@ -248,8 +243,11 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
     private void populateTimeline() {
 
-        // TODO figure out how to have progress initially
-//        showProgressBar();
+
+        showProgressBar();
+
+
+
         client.getHomeTimeline(new JsonHttpResponseHandler(){
 
             @Override
@@ -275,8 +273,8 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
                     }
 
                 }
-                // TODO figure out how to have progress initially
-//                hideProgressBar();
+
+                hideProgressBar();
 
 
             }
@@ -308,6 +306,13 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
 
     }
+
+    private void showCompose() {
+        FragmentManager fm = getSupportFragmentManager();
+        EditNameDialogFragment editNameDialogFragment = EditNameDialogFragment.newInstance("Some Title");
+        editNameDialogFragment.show(fm, "fragment_compose");
+    }
+
 
 
     @Override
