@@ -80,6 +80,22 @@ public class ComposeFragment extends DialogFragment {
             etTweet.setText("@"+reTweet+" ");
         }
 
+        int charCount = etTweet.getText().toString().length();
+        int charsLeft = 280 - charCount;
+
+        // change color for appropriate text
+        if (charsLeft < 0 )
+        {
+            tvChars.setTextColor(Color.RED);
+        }
+        else
+        {
+            tvChars.setTextColor(Color.GRAY);
+        }
+
+        // set text to how many chars are left
+        tvChars.setText(charsLeft + " characters Left");
+
         // text watcher to update the chars left window
         etTweet.addTextChangedListener(new TextWatcher() {
             @Override
@@ -105,7 +121,7 @@ public class ComposeFragment extends DialogFragment {
                 }
 
                 // set text to how many chars are left
-                tvChars.setText(charsLeft + " Characters Left");
+                tvChars.setText(charsLeft + " characters Left");
             }
 
             @Override
