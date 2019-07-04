@@ -121,10 +121,6 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
                 clickListener.onTweetClicked(tweet);
 
 
-
-
-
-
             }
         });
 
@@ -132,7 +128,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.ViewHold
 
     }
 
-    public static interface OnTweetClickListener{
+    public interface OnTweetClickListener{
         void onTweetClicked(Tweet tweet);
 
     }

@@ -1,6 +1,5 @@
 package com.codepath.apps.restclienttemplate;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -21,13 +20,12 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
-public class TimelineActivity extends AppCompatActivity implements TwitterAdapter.OnTweetClickListener {
+public class TimelineActivity extends AppCompatActivity implements TwitterAdapter.OnTweetClickListener, ComposeFragment.ComposeFragmentListener {
 
 
     private RestClient client;
@@ -37,6 +35,7 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     SwipeRefreshLayout swipeContainer;
     ProgressBar progressBar;
     MenuItem miActionProgressItem;
+
 
 
 
@@ -90,34 +89,8 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
         miActionProgressItem.setVisible(false);
     }
 
-    public void startComposeActivity()
-    {
-//        // start new intent with that request code
-//        Intent i = new Intent(this,ComposeActivity.class);
-//
-//        startActivityForResult(i,100);
-        showCompose();
-
-    }
 
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        // check request code and result code first
-
-        // Use data parameter
-        if(requestCode == 100 && resultCode == RESULT_OK)
-        {
-            // unwrap the tweet that was posted
-            Tweet tweet = Parcels.unwrap(data.getParcelableExtra(Tweet.class.getSimpleName()));
-            // add to beginning of adapter
-            tweets.add(0, tweet);
-            // notify adapter and scroll up
-            tweetAdapter.notifyItemInserted(0);
-            rvTweets.scrollToPosition(0);
-        }
-    }
 
 
 
@@ -307,11 +280,30 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
     }
 
-    private void showCompose() {
+    private void startComposeActivity() {
         FragmentManager fm = getSupportFragmentManager();
-        EditNameDialogFragment editNameDialogFragment = EditNameDialogFragment.newInstance("Some Title");
-        editNameDialogFragment.show(fm, "fragment_compose");
+        ComposeFragment editNameDialogFragment = ComposeFragment.newInstance(this);
+        editNameDialogFragment.show(fm, "fragment_edit_name");
     }
+
+    private void startComposeActivity(Tweet tweet) {
+        FragmentManager fm = getSupportFragmentManager();
+        ComposeFragment editNameDialogFragment = ComposeFragment.newInstance(this);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("tweet", tweet.user.screenName);
+
+
+        editNameDialogFragment.setArguments(bundle);
+
+
+
+
+        editNameDialogFragment.show(fm, "fragment_edit_name");
+
+
+    }
+
 
 
 
@@ -319,10 +311,21 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     public void onTweetClicked(Tweet tweet) {
         // start new intent with and @ sign in front
 
-        Intent i = new Intent(this,ComposeActivity.class);
 
-        i.putExtra("@","@"+tweet.user.screenName+" ");
+        startComposeActivity(tweet);
 
-        startActivityForResult(i,100);
+
     }
+
+    @Override
+    public void onFinishTweet(Tweet tweet) {
+
+        tweets.add(0, tweet);
+        // notify adapter and scroll up
+        tweetAdapter.notifyItemInserted(0);
+        rvTweets.scrollToPosition(0);
+
+    }
+
+
 }
