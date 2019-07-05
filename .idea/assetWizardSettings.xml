@@ -34,7 +34,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_share_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/editor/ic_mode_edit_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -55,9 +55,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/twitter-redesign-icons 2/pngs/ic_vector_location_stroke.png" />
-                                      <entry key="outputName" value="ic_loc" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/twitter-redesign-icons 2/pngs/ic_vector_compose.png" />
+                                      <entry key="outputName" value="ic_compose" />
+                                      <entry key="theme" value="HOLO_DARK" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>

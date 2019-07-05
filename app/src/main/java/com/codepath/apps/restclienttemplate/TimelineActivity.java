@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ProgressBar;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -33,8 +33,10 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
     SwipeRefreshLayout swipeContainer;
-    ProgressBar progressBar;
     MenuItem miActionProgressItem;
+
+    FloatingActionButton fabCompose;
+
 
 
 
@@ -50,11 +52,11 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        // if the option to compose is clicked then start the comnpose activity
-        if(item.getItemId() == R.id.miCompose)
-        {
-            startComposeActivity();
-        }
+//        // if the option to compose is clicked then start the comnpose activity
+//        if(item.getItemId() == R.id.miCompose)
+//        {
+//            startComposeActivity();
+//        }
 
 
         return super.onOptionsItemSelected(item);
@@ -105,8 +107,7 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
 
 
-        progressBar = findViewById(R.id.progressBar);
-        progressBar.setVisibility(View.GONE);
+
 
 
         client = RestApplication.getRestClient(this);
@@ -146,6 +147,21 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
                 android.R.color.holo_green_light,
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
+
+
+        fabCompose = findViewById(R.id.fabCompose);
+
+
+        fabCompose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startComposeActivity();
+            }
+        });
+
+
+
 
 
 
@@ -290,6 +306,8 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
         FragmentManager fm = getSupportFragmentManager();
         ComposeFragment editNameDialogFragment = ComposeFragment.newInstance(this);
 
+
+
         Bundle bundle = new Bundle();
         bundle.putString("tweet", tweet.user.screenName);
 
@@ -310,7 +328,6 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     @Override
     public void onTweetClicked(Tweet tweet) {
         // start new intent with and @ sign in front
-
 
         startComposeActivity(tweet);
 

@@ -4,6 +4,25 @@
             "outputFile": "/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
+                    "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/a70daf58eec312b1168e24aad415f67a/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
                     "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
