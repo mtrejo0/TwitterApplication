@@ -51,14 +51,6 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-//        // if the option to compose is clicked then start the comnpose activity
-//        if(item.getItemId() == R.id.miCompose)
-//        {
-//            startComposeActivity();
-//        }
-
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -68,33 +60,20 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     public boolean onPrepareOptionsMenu(Menu menu) {
         // Store instance of the menu item containing progress
         miActionProgressItem = menu.findItem(R.id.miActionProgress);
-
         // get tweets to display initially
-
         populateTimeline();
-
-
-
-
-
         // Return to finish
         return super.onPrepareOptionsMenu(menu);
     }
     public void showProgressBar() {
         // Show progress item
         miActionProgressItem.setVisible(true);
-
     }
 
     public void hideProgressBar() {
         // Hide progress item
         miActionProgressItem.setVisible(false);
     }
-
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,11 +83,6 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
         // styling
 
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#35CDE5")));
-
-
-
-
-
 
         client = RestApplication.getRestClient(this);
 
@@ -126,8 +100,6 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
         // set adapter
 
         rvTweets.setAdapter(tweetAdapter);
-
-
 
 
         // Lookup the swipe container view
@@ -160,21 +132,7 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
 
     public void fetchTimelineAsync(int page) {
         // Send the network request to fetch the updated data
@@ -200,8 +158,6 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
                         tweets.add(tweet);
                         tweetAdapter.notifyItemInserted(tweets.size()-1);
 
-
-
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -211,11 +167,7 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
                 swipeContainer.setRefreshing(false);
 
                 hideProgressBar();
-
-
-
             }
-
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
                 Log.d("TwitterRefresh",errorResponse.toString());
@@ -224,18 +176,11 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
                 swipeContainer.setRefreshing(false);
             }
         });
-
-
-
     }
 
 
     private void populateTimeline() {
-
-
         showProgressBar();
-
-
 
         client.getHomeTimeline(new JsonHttpResponseHandler(){
 
@@ -305,21 +250,10 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     private void startComposeActivity(Tweet tweet) {
         FragmentManager fm = getSupportFragmentManager();
         ComposeFragment editNameDialogFragment = ComposeFragment.newInstance(this);
-
-
-
         Bundle bundle = new Bundle();
         bundle.putString("tweet", tweet.user.screenName);
-
-
         editNameDialogFragment.setArguments(bundle);
-
-
-
-
         editNameDialogFragment.show(fm, "fragment_edit_name");
-
-
     }
 
 
@@ -328,21 +262,15 @@ public class TimelineActivity extends AppCompatActivity implements TwitterAdapte
     @Override
     public void onTweetClicked(Tweet tweet) {
         // start new intent with and @ sign in front
-
         startComposeActivity(tweet);
-
-
     }
 
     @Override
     public void onFinishTweet(Tweet tweet) {
-
         tweets.add(0, tweet);
         // notify adapter and scroll up
         tweetAdapter.notifyItemInserted(0);
         rvTweets.scrollToPosition(0);
 
     }
-
-
 }

@@ -8,7 +8,7 @@
         android:visible="false"
         app:actionLayout="@layout/action_view_progress"
         app:showAsAction="always"></item>
-  
+
 
     <item
         android:id="@+id/miProfile"

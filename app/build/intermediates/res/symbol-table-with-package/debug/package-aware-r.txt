@@ -1342,6 +1342,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_compose
+layout fragment_detail
 layout item_tweet
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
