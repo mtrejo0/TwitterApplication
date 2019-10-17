@@ -1,6 +1,6 @@
-# Project 3 - *Twitter Mirror*
+# Project 3 - *TwitterApplication*
 
-**Twitter Mirror** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**TwitterApplication** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public) allowing you to log into your own twitter account, make tweets, and retweet posts. Other features shows images from posts and other user profiles.
 
 Time spent: **20** hours spent in total
 
