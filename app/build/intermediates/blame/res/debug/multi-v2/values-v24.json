@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/moisestrejo/Desktop/android/TwitterApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/res/values-v24/values-v24.xml",
+                    "source": "/Users/moisestrejo/.gradle/caches/transforms-2/files-2.1/d3aedb7f7ccc44378c0a3100bf16aa48/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/bf97533c4487dbdbccf25792f983a09e/res/values-v24/values-v24.xml",
+                    "source": "/Users/moisestrejo/.gradle/caches/transforms-2/files-2.1/c5e862c2709b7d68e1ecc31333a94790/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

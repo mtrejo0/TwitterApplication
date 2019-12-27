@@ -1,4 +1,4 @@
-#Fri Jul 05 10:05:01 PDT 2019
-base.0=/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/dex/debug/mergeDexDebug/out
+#Thu Dec 26 20:43:08 CST 2019
+base.0=/Users/moisestrejo/Desktop/android/TwitterApplication/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/moisestrejo/Desktop/android/TwitterApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/ea08f85e8b6a90a056fa1ab09b106b90/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/res/values-v16/values-v16.xml",
+                    "source": "/Users/moisestrejo/.gradle/caches/transforms-2/files-2.1/d3aedb7f7ccc44378c0a3100bf16aa48/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/moisestrejo/.gradle/caches/transforms-2/files-2.1/1a68ff80e358e5316ed536e03b8c4bbe/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

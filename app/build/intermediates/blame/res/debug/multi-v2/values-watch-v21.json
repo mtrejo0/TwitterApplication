@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "/Users/moisestrejo/Desktop/android/TwitterApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/Users/mtrejo/.gradle/caches/transforms-2/files-2.1/0bc8849c57d5f9f61312fb4029de136e/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "/Users/moisestrejo/.gradle/caches/transforms-2/files-2.1/d3aedb7f7ccc44378c0a3100bf16aa48/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

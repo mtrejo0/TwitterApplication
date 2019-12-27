@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mtrejo/Documents/TwitterMirror/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "outputFile": "/Users/moisestrejo/Desktop/android/TwitterApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/mtrejo/Documents/TwitterMirror/app/src/main/res/values-sw720dp-land/dimens.xml",
+                    "source": "/Users/moisestrejo/Desktop/android/TwitterApplication/app/src/main/res/values-sw720dp-land/dimens.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
